@@ -69,7 +69,8 @@
         //Apply stles
         id.css(initStyles);
 
-        modal.click(function(event) {       
+       $(document).on('click',modal.selector,function(event) {
+        //After ajax load
             event.preventDefault();
             $('body, html').css({'overflow':'hidden'});
             if (href == idConc) {
